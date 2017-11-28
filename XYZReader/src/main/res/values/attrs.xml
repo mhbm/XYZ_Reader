@@ -1,4 +1,8 @@
 <resources>
+    <declare-styleable name="TextSwitch">
+        <attr name="switchText" format="string" />
+        <attr name="switchTextAppearance" format="reference" />
+    </declare-styleable>
     <declare-styleable name="DrawInsetsFrameLayout">
         <attr name="insetBackground" format="color|reference" />
     </declare-styleable>
