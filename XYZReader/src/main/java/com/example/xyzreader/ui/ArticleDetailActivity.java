@@ -15,13 +15,18 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowInsets;
+import android.widget.Toast;
 
 import com.example.xyzreader.R;
 import com.example.xyzreader.data.ArticleLoader;
 import com.example.xyzreader.data.ItemsContract;
 
+import static android.app.PendingIntent.getActivity;
+
 /**
  * An activity representing a single Article detail screen, letting you swipe between articles.
+ *
+ * Segunda tela
  */
 public class ArticleDetailActivity extends ActionBarActivity
         implements LoaderManager.LoaderCallbacks<Cursor> {
