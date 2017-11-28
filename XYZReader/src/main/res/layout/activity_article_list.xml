@@ -1,5 +1,4 @@
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,34 +25,44 @@
     <FrameLayout
         android:id="@+id/toolbar_container"
         android:layout_width="match_parent"
-        android:layout_height="112dp"
+        android:layout_height="85dp"
         android:background="@color/theme_primary"
         android:elevation="8dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <android.support.design.widget.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_marginLeft="@dimen/list_toolbar_side_margin"
-            android:layout_marginRight="@dimen/list_toolbar_side_margin"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-            >
+            android:layout_height="85dp"
+            android:elevation="@dimen/elevation_for_appbar"
+            android:background="@color/theme_primary"
+            android:fitsSystemWindows="true">
 
-            <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:gravity="center">
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/app_name"
-                    android:src="@drawable/logo" />
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="@dimen/list_toolbar_side_margin"
+                android:layout_marginRight="@dimen/list_toolbar_side_margin"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-            </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center">
 
-        </android.support.v7.widget.Toolbar>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/logo" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
     </FrameLayout>
 
 </android.support.design.widget.CoordinatorLayout>
