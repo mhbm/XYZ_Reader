@@ -19,6 +19,7 @@
             android:paddingLeft="@dimen/list_side_margin"
             android:paddingRight="@dimen/list_side_margin"
             android:paddingTop="116dp"
+            android:transitionName="hero"
             android:scrollbarStyle="outsideOverlay" />
     </android.support.v4.widget.SwipeRefreshLayout>
 
@@ -33,9 +34,9 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="wrap_content"
             android:elevation="@dimen/elevation_for_appbar"
-            android:background="@color/theme_primary"
+            android:theme="@style/AppTheme"
             android:fitsSystemWindows="true">
 
 
