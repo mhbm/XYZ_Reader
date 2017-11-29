@@ -24,7 +24,6 @@
             android:background="?selectableItemBackgroundBorderless"
             android:contentDescription="@string/up"
             android:src="@drawable/ic_arrow_back"
-            android:transitionName="hero"
             />
     </FrameLayout>
 </android.support.design.widget.CoordinatorLayout>

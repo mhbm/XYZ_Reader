@@ -23,7 +23,6 @@
             android:adjustViewBounds="true"
             android:background="@color/photo_placeholder"
             android:scaleType="centerCrop"
-            android:transitionName="hero"
             style="@style/AppTheme"/>
 
         <TextView
